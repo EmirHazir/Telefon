@@ -1,0 +1,32 @@
+﻿@model TelefonRehberi.WebUI.Models.EmployeListViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>Adı</th>
+        <th>Soyadı</th>
+        <th>Telefonu</th>
+    </tr>
+
+@foreach (var item in Model.Employees) {
+    <tr>
+        <td>@item.FirstName</td>
+        <td>@item.Surname</td>
+        <td>@item.TelephoneNo</td>
+
+        <td>
+            @Html.ActionLink("Details", "Details", new {  id=item.Id  }) 
+        </td>
+    </tr>
+}
+
+</table>

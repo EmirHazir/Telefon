@@ -1,0 +1,4 @@
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.DataAccess\bin\Debug\TelefonRehberi.DataAccess.dll
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.DataAccess\bin\Debug\TelefonRehberi.DataAccess.pdb
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.DataAccess\obj\Debug\TelefonRehberi.DataAccess.dll
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.DataAccess\obj\Debug\TelefonRehberi.DataAccess.pdb

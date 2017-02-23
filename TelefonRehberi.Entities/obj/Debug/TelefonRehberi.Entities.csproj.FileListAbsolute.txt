@@ -1,0 +1,10 @@
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.Entities\bin\Debug\TelefonRehberi.Entities.dll.config
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.Entities\bin\Debug\TelefonRehberi.Entities.dll
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.Entities\bin\Debug\TelefonRehberi.Entities.pdb
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.Entities\bin\Debug\EntityFramework.dll
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.Entities\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.Entities\bin\Debug\EntityFramework.xml
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.Entities\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.Entities\obj\Debug\TelefonRehberi.Entities.csprojResolveAssemblyReference.cache
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.Entities\obj\Debug\TelefonRehberi.Entities.dll
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.Entities\obj\Debug\TelefonRehberi.Entities.pdb

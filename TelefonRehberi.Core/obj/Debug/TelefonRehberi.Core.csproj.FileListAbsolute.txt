@@ -1,0 +1,5 @@
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.Core\bin\Debug\TelefonRehberi.Core.dll
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.Core\bin\Debug\TelefonRehberi.Core.pdb
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.Core\obj\Debug\TelefonRehberi.Core.csprojResolveAssemblyReference.cache
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.Core\obj\Debug\TelefonRehberi.Core.dll
+c:\users\emirhazir\documents\visual studio 2015\Projects\TelefonRehberi\TelefonRehberi.Core\obj\Debug\TelefonRehberi.Core.pdb
