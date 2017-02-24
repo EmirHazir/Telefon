@@ -1,0 +1,42 @@
+﻿@model TelefonRehberi.WebUI.Areas.Admin.Models.EmployeeDeleteVM
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Emin misin?</h3>
+<div>
+    <h4>EmployeeeDeleteVM</h4>
+    <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Employes.FirstName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Employes.FirstName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Employes.Surname)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Employes.Surname)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Employes.TelephoneNo)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Employes.TelephoneNo)
+            </dd>
+        </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -8,9 +9,9 @@ using TelefonRehberi.Entities.Concrete;
 
 namespace TelefonRehberi.DataAccess.Concrete
 {
-   public class TelefonDBContext : DbContext
+   public class TelefonDBContext : IdentityDbContext<ApplicationUser>
     {
-        public TelefonDBContext():base("Name=TelefonDb")
+        public TelefonDBContext():base("TelefonDb")
         {
 
         }
@@ -22,6 +23,7 @@ namespace TelefonRehberi.DataAccess.Concrete
 
         public DbSet<Departman> Departmans { get; set; }
 
-        
+
+
     }
 }

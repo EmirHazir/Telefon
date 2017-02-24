@@ -1,0 +1,29 @@
+﻿@model TelefonRehberi.WebUI.Areas.Admin.Models.RoleVM
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>Rol Adı</th>
+        <th>Rolün Sahibi</th>
+    </tr>
+@foreach (var item in Model.Roles) {
+    <tr>
+        <td>@item.RoleName</td>
+        <td>@item.Employees</td>
+
+        <td>
+            @Html.ActionLink("Edit", "Update", new {  id=item.Id  }) |
+            @Html.ActionLink("Details", "Details", new {  id=item.Id  }) |
+            @Html.ActionLink("Delete", "Delete", new {  id=item.Id  })
+        </td>
+    </tr>
+}
+</table>

@@ -9,6 +9,7 @@ using TelefonRehberi.WebUI.Areas.Admin.Models;
 
 namespace TelefonRehberi.WebUI.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class DepartmanController : Controller
     {
         private IDepartmanService _departmanService;
@@ -74,9 +75,23 @@ namespace TelefonRehberi.WebUI.Areas.Admin.Controllers
 
         public ActionResult Delete(int departmanId)
         {
-            _departmanService.Delete(departmanId);
-            return RedirectToAction("Index");
+            var model = new DepartmanDeleteVM
+            {
+                Departmans = _departmanService.GetById(departmanId)
+            };
+            return View(model);
         }
 
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirm(int departmanId)
+        {
+            if (ModelState.IsValid)
+            {
+                _departmanService.Delete(departmanId);
+            }
+            return RedirectToAction("Index");
+        }
     }
 }

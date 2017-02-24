@@ -16,17 +16,18 @@
         <th>Soyadı</th>
         <th>Telefonu</th>
     </tr>
-
-@foreach (var item in Model.Employees) {
-    <tr>
-        <td>@item.FirstName</td>
-        <td>@item.Surname</td>
-        <td>@item.TelephoneNo</td>
-
-        <td>
-            @Html.ActionLink("Details", "Details", new {  id=item.Id  }) 
-        </td>
-    </tr>
-}
+    
+    @foreach (var item in Model.Employees)
+    {
+        <tr>
+            <td>@item.FirstName</td>
+            <td>@item.Surname</td>
+            <td>@item.TelephoneNo</td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = item.Id })
+            </td>
+        </tr>
+    }
 
 </table>
+

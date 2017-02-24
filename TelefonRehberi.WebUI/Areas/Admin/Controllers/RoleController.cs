@@ -9,6 +9,7 @@ using TelefonRehberi.WebUI.Areas.Admin.Models;
 
 namespace TelefonRehberi.WebUI.Areas.Admin.Controllers
 {
+    [Authorize(Users = "Admin")]
     public class RoleController : Controller
     {
         private IRoleService _roleService;
@@ -74,12 +75,24 @@ namespace TelefonRehberi.WebUI.Areas.Admin.Controllers
 
         public ActionResult Delete(int roleId)
         {
-            _roleService.Delete(roleId);
-
-            return RedirectToAction("Index");
+            var model = new RoleDeleteVM
+            {
+                Roles = _roleService.GetById(roleId),
+                Employees = _employeeService.GetAll()
+            };
+            return View(model);
         }
 
-
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirm(int roleId)
+        {
+            if (ModelState.IsValid)
+            {
+                _roleService.Delete(roleId);
+            }
+            return RedirectToAction("Index");
+        }
 
 
 

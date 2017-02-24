@@ -1,0 +1,35 @@
+﻿@model TelefonRehberi.WebUI.Areas.Admin.Models.EmployeeeListVM
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>Adi</th>
+        <th>Soyadi</th>
+        <th>Telefon</th>
+        <th>Departman</th>
+    </tr>
+
+@foreach (var item in Model.Employees) {
+    <tr>
+        <td>@item.FirstName</td>
+        <td>@item.Surname</td>
+        <td>@item.TelephoneNo</td>
+        <td>@item.Departman</td>
+
+        <td>
+            @Html.ActionLink("Edit", "Update", new {  id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new {  id=item.Id  }) |
+            @Html.ActionLink("Delete", "Delete", new {  id=item.Id  })
+        </td>
+    </tr>
+}
+
+</table>
